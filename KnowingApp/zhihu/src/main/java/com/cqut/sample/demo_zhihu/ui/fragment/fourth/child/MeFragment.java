@@ -11,9 +11,7 @@ import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.ui.fragment.fourth.ZhihuFourthFragment;
 
-/**
- * Created by YoKeyword on 16/6/6.
- */
+
 public class MeFragment extends SupportFragment {
     private TextView mTvBtnSettings;
 

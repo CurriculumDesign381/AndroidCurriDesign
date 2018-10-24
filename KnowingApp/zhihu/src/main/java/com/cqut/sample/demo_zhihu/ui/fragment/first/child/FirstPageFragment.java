@@ -11,9 +11,6 @@ import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.ui.fragment.third.ColleageFragment;
 
-/**
- * Created by fei on 2018/10/18.
- */
 
 public class FirstPageFragment extends SupportFragment {
     private static final String ARG_TYPE = "arg_type";

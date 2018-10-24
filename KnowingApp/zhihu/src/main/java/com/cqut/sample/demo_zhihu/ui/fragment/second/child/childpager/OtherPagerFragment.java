@@ -10,9 +10,7 @@ import android.widget.TextView;
 import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 
-/**
- * Created by YoKeyword on 16/6/5.
- */
+
 public class OtherPagerFragment extends SupportFragment {
     private static final String ARG_TYPE = "arg_type";
 

@@ -29,9 +29,7 @@ import com.cqut.sample.demo_zhihu.event.TabSelectedEvent;
 import com.cqut.sample.demo_zhihu.helper.DetailTransition;
 import com.cqut.sample.demo_zhihu.listener.OnItemClickListener;
 
-/**
- * Created by YoKeyword on 16/6/5.
- */
+
 public class FirstHomeFragment extends SupportFragment implements SwipeRefreshLayout.OnRefreshListener {
     private Toolbar mToolbar;
     private RecyclerView mRecy;
@@ -57,9 +55,7 @@ public class FirstHomeFragment extends SupportFragment implements SwipeRefreshLa
 
 
     public static FirstHomeFragment newInstance() {
-
         Bundle args = new Bundle();
-
         FirstHomeFragment fragment = new FirstHomeFragment();
         fragment.setArguments(args);
         return fragment;

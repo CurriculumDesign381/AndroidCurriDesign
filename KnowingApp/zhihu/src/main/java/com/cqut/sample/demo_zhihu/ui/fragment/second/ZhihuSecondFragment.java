@@ -10,9 +10,7 @@ import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.base.BaseMainFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.second.child.ViewPagerFragment;
 
-/**
- * Created by YoKeyword on 16/6/3.
- */
+
 public class ZhihuSecondFragment extends BaseMainFragment {
 
     public static ZhihuSecondFragment newInstance() {

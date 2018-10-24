@@ -16,9 +16,7 @@ import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.ui.fragment.third.child.child.ContentFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.third.child.child.MenuListFragment;
 
-/**
- * Created by YoKeyword on 16/2/4.
- */
+
 public class ShopFragment extends SupportFragment {
     public static final String TAG = ShopFragment.class.getSimpleName();
 

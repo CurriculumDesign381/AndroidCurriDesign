@@ -18,9 +18,7 @@ import com.cqut.sample.demo_zhihu.adapter.MenuAdapter;
 import com.cqut.sample.demo_zhihu.listener.OnItemClickListener;
 import com.cqut.sample.demo_zhihu.ui.fragment.third.child.ShopFragment;
 
-/**
- * Created by YoKeyword on 16/2/9.
- */
+
 public class MenuListFragment extends SupportFragment {
     private static final String ARG_MENUS = "arg_menus";
     private static final String SAVE_STATE_POSITION = "save_state_position";

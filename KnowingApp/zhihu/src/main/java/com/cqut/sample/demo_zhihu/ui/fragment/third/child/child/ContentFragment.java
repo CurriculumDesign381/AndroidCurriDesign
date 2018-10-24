@@ -16,9 +16,7 @@ import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.ui.fragment.CycleFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.third.child.ShopFragment;
 
-/**
- * Created by YoKeyword on 16/2/9.
- */
+
 public class ContentFragment extends SupportFragment {
     private static final String ARG_MENU = "arg_menu";
 

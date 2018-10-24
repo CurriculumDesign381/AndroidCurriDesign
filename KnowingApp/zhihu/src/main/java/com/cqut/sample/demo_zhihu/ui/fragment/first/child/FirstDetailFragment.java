@@ -15,9 +15,7 @@ import com.cqut.sample.demo_zhihu.base.BaseBackFragment;
 import com.cqut.sample.demo_zhihu.entity.Article;
 import com.cqut.sample.demo_zhihu.ui.fragment.CycleFragment;
 
-/**
- * Created by YoKeyword on 16/6/5.
- */
+
 public class FirstDetailFragment extends BaseBackFragment {
     private static final String ARG_ITEM = "arg_item";
 

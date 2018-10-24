@@ -9,9 +9,7 @@ import android.view.ViewGroup;
 import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 
-/**
- * Created by YoKeyword on 16/6/6.
- */
+
 public class AvatarFragment extends SupportFragment {
 
     public static AvatarFragment newInstance() {

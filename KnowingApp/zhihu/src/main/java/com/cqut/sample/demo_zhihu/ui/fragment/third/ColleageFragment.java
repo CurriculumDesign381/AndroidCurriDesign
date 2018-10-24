@@ -10,9 +10,7 @@ import android.widget.TextView;
 import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 
-/**
- * Created by fei on 2018/10/18.
- */
+
 
 public class ColleageFragment extends SupportFragment {
     private static final String ARG_TYPE = "arg_type";

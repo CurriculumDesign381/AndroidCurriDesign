@@ -5,9 +5,7 @@ import android.app.Application;
 import com.cqut.fragmentation.Fragmentation;
 import com.cqut.fragmentation.helper.ExceptionHandler;
 
-/**
- * Created by YoKey on 16/11/23.
- */
+
 public class App extends Application {
 
     @Override

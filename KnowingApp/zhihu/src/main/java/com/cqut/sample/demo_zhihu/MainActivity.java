@@ -20,10 +20,7 @@ import com.cqut.sample.demo_zhihu.ui.fragment.third.ColleageFragment;
 import com.cqut.sample.demo_zhihu.ui.view.BottomBar;
 import com.cqut.sample.demo_zhihu.ui.view.BottomBarTab;
 
-/**
- * 类知乎 复杂嵌套Demo tip: 多使用右上角的"查看栈视图"
- * Created by YoKeyword on 16/6/2.
- */
+
 public class MainActivity extends SupportActivity implements BaseMainFragment.OnBackToFirstListener {
     public static final int FIRST = 0;
     public static final int SECOND = 1;
@@ -66,18 +63,15 @@ public class MainActivity extends SupportActivity implements BaseMainFragment.On
 
     private void initView() {
         mBottomBar = (BottomBar) findViewById(R.id.bottomBar);
-
         mBottomBar.addItem(new BottomBarTab(this, R.drawable.ic_home_white_24dp))
                     .addItem(new BottomBarTab(this, R.drawable.ic_discover_white_24dp))
                     .addItem(new BottomBarTab(this, R.drawable.ic_message_white_24dp))
                     .addItem(new BottomBarTab(this, R.drawable.ic_account_circle_white_24dp));
-
         mBottomBar.setOnTabSelectedListener(new BottomBar.OnTabSelectedListener() {
             @Override
             public void onTabSelected(int position, int prePosition) {
                 showHideFragment(mFragments[position], mFragments[prePosition]);
             }
-
             @Override
             public void onTabUnselected(int position) {
 
