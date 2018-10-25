@@ -3,13 +3,20 @@ package com.cqut.sample.demo_zhihu.entity;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**
- * Created by YoKeyword on 16/2/1.
- */
+
 public class Article implements Parcelable{
     private String title;
     private String content;
     private int imgRes;
+    private String url;
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getUrl() {
+        return url;
+    }
 
     public Article(String title, String content) {
         this.title = title;

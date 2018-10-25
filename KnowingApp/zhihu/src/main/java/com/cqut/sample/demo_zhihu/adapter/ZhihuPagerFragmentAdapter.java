@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.cqut.sample.demo_zhihu.ui.fragment.second.child.childpager.OtherPagerFragment;
+import com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager.OtherPagerFragment;
 
 //为fragment添加数据
 public class ZhihuPagerFragmentAdapter extends FragmentPagerAdapter {

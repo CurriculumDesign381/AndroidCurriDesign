@@ -1,4 +1,4 @@
-package com.cqut.sample.demo_zhihu.ui.fragment.first.child;
+package com.cqut.sample.demo_zhihu.ui.fragment.second.child;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -30,7 +30,7 @@ import com.cqut.sample.demo_zhihu.helper.DetailTransition;
 import com.cqut.sample.demo_zhihu.listener.OnItemClickListener;
 
 
-public class FirstHomeFragment extends SupportFragment implements SwipeRefreshLayout.OnRefreshListener {
+public class SecondHomeFragment extends SupportFragment implements SwipeRefreshLayout.OnRefreshListener {
     private Toolbar mToolbar;
     private RecyclerView mRecy;
     private SwipeRefreshLayout mRefreshLayout;
@@ -52,11 +52,17 @@ public class FirstHomeFragment extends SupportFragment implements SwipeRefreshLa
     private int[] mImgRes = new int[]{
             R.drawable.bg_first, R.drawable.bg_second, R.drawable.bg_third, R.drawable.bg_fourth, R.drawable.bg_fifth
     };
+  private String[] mVedio = new String[]{
+          "http://ips.ifeng.com/video19.ifeng.com/video09/2014/06/16/1989823-102-086-0009.mp4",
+          "http://2449.vod.myqcloud.com/2449_43b6f696980311e59ed467f22794e792.f20.mp4",
+          "http://121.40.64.47/resource/mp3/music_yangguang3.mp3",
+          "http://ips.ifeng.com/video19.ifeng.com/video09/2014/06/16/1989823-102-086-0009.mp4",
+          "http://ips.ifeng.com/video19.ifeng.com/video09/2014/06/16/1989823-102-086-0009.mp4"
+  };
 
-
-    public static FirstHomeFragment newInstance() {
+    public static SecondHomeFragment newInstance() {
         Bundle args = new Bundle();
-        FirstHomeFragment fragment = new FirstHomeFragment();
+        SecondHomeFragment fragment = new SecondHomeFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -89,7 +95,7 @@ public class FirstHomeFragment extends SupportFragment implements SwipeRefreshLa
         mAdapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(int position, View view, RecyclerView.ViewHolder vh) {
-                FirstDetailFragment fragment = FirstDetailFragment.newInstance(mAdapter.getItem(position));
+                SecondDetailFragment fragment = SecondDetailFragment.newInstance(mAdapter.getItem(position));
 
                 // 这里是使用SharedElement的用例
                 // LOLLIPOP(5.0)系统的 SharedElement支持有 系统BUG， 这里判断大于 > LOLLIPOP

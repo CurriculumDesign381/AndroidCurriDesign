@@ -1,4 +1,4 @@
-package com.cqut.sample.demo_zhihu.ui.fragment.second.child;
+package com.cqut.sample.demo_zhihu.ui.fragment.first.child;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

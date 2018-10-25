@@ -1,4 +1,4 @@
-package com.cqut.sample.demo_zhihu.ui.fragment.first.child;
+package com.cqut.sample.demo_zhihu.ui.fragment.second.child;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -16,7 +16,7 @@ import com.cqut.sample.demo_zhihu.entity.Article;
 import com.cqut.sample.demo_zhihu.ui.fragment.CycleFragment;
 
 
-public class FirstDetailFragment extends BaseBackFragment {
+public class SecondDetailFragment extends BaseBackFragment {
     private static final String ARG_ITEM = "arg_item";
 
     private Article mArticle;
@@ -26,11 +26,11 @@ public class FirstDetailFragment extends BaseBackFragment {
     private TextView mTvTitle;
     private FloatingActionButton mFab;
 
-    public static FirstDetailFragment newInstance(Article article) {
+    public static SecondDetailFragment newInstance(Article article) {
 
         Bundle args = new Bundle();
         args.putParcelable(ARG_ITEM, article);
-        FirstDetailFragment fragment = new FirstDetailFragment();
+        SecondDetailFragment fragment = new SecondDetailFragment();
         fragment.setArguments(args);
         return fragment;
     }

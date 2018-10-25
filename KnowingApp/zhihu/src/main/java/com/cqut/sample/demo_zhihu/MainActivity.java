@@ -10,12 +10,13 @@ import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.base.BaseMainFragment;
 import com.cqut.sample.demo_zhihu.event.TabSelectedEvent;
-import com.cqut.sample.demo_zhihu.ui.fragment.first.ZhihuFirstFragment;
-import com.cqut.sample.demo_zhihu.ui.fragment.first.child.FirstHomeFragment;
+import com.cqut.sample.demo_zhihu.ui.fragment.fifth.NoticceFragment;
+import com.cqut.sample.demo_zhihu.ui.fragment.second.ZhihuSecondFragment;
+import com.cqut.sample.demo_zhihu.ui.fragment.second.child.SecondHomeFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.fourth.HomePageFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.fourth.child.MeFragment;
-import com.cqut.sample.demo_zhihu.ui.fragment.second.ZhihuSecondFragment;
-import com.cqut.sample.demo_zhihu.ui.fragment.second.child.ViewPagerFragment;
+import com.cqut.sample.demo_zhihu.ui.fragment.first.ZhihuFirstFragment;
+import com.cqut.sample.demo_zhihu.ui.fragment.first.child.ViewPagerFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.third.ColleageFragment;
 import com.cqut.sample.demo_zhihu.ui.view.BottomBar;
 import com.cqut.sample.demo_zhihu.ui.view.BottomBarTab;
@@ -26,8 +27,9 @@ public class MainActivity extends SupportActivity implements BaseMainFragment.On
     public static final int SECOND = 1;
     public static final int THIRD = 2;
     public static final int FOURTH = 3;
+    public static final int FIFTH = 4;
 
-    private SupportFragment[] mFragments = new SupportFragment[4];
+    private SupportFragment[] mFragments = new SupportFragment[5];
 
     private BottomBar mBottomBar;
 
@@ -36,24 +38,26 @@ public class MainActivity extends SupportActivity implements BaseMainFragment.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.zhihu_activity_main);
 
-        SupportFragment firstFragment = findFragment(ZhihuFirstFragment.class);
+        SupportFragment firstFragment = findFragment(ZhihuSecondFragment.class);
         if (firstFragment == null) {
             mFragments[FIRST] = ZhihuFirstFragment.newInstance();
             mFragments[SECOND] = ZhihuSecondFragment.newInstance();
             mFragments[THIRD] = ColleageFragment.newInstance("Colleage");
-            mFragments[FOURTH] = HomePageFragment.newInstance("PHomePage");
+            mFragments[FOURTH] = NoticceFragment.newInstance("Noticce");
+            mFragments[FIFTH] = HomePageFragment.newInstance("PHomePage");
 
             loadMultipleRootFragment(R.id.fl_container, FIRST,
                     mFragments[FIRST],
                     mFragments[SECOND],
                     mFragments[THIRD],
-                    mFragments[FOURTH]);
+                    mFragments[FOURTH],
+                    mFragments[FIFTH]);
         } else {
             // 这里库已经做了Fragment恢复,所有不需要额外的处理了, 不会出现重叠问题
 
             // 这里我们需要拿到mFragments的引用
             mFragments[FIRST] = firstFragment;
-            mFragments[SECOND] = findFragment(ZhihuSecondFragment.class);
+            mFragments[SECOND] = findFragment(ZhihuFirstFragment.class);
             mFragments[THIRD] = findFragment(ColleageFragment.class);
             mFragments[FOURTH] = findFragment(HomePageFragment.class);
         }
@@ -63,10 +67,12 @@ public class MainActivity extends SupportActivity implements BaseMainFragment.On
 
     private void initView() {
         mBottomBar = (BottomBar) findViewById(R.id.bottomBar);
-        mBottomBar.addItem(new BottomBarTab(this, R.drawable.ic_home_white_24dp))
-                    .addItem(new BottomBarTab(this, R.drawable.ic_discover_white_24dp))
-                    .addItem(new BottomBarTab(this, R.drawable.ic_message_white_24dp))
-                    .addItem(new BottomBarTab(this, R.drawable.ic_account_circle_white_24dp));
+          mBottomBar.addItem(new BottomBarTab(this, R.drawable.ic_message_white_24dp))
+                    .addItem(new BottomBarTab(this, R.drawable.ic_record_voice_over))
+                    .addItem(new BottomBarTab(this, R.drawable.ic_chrome_reader_mode))
+                    .addItem(new BottomBarTab(this, R.drawable.ic_notifications))
+                    .addItem(new BottomBarTab(this,R.drawable.ic_account_circle_white_24dp));
+
         mBottomBar.setOnTabSelectedListener(new BottomBar.OnTabSelectedListener() {
             @Override
             public void onTabSelected(int position, int prePosition) {
@@ -84,9 +90,9 @@ public class MainActivity extends SupportActivity implements BaseMainFragment.On
 
                 // 如果不在该类别Fragment的主页,则回到主页;
                 if (count > 1) {
-                    if (currentFragment instanceof ZhihuFirstFragment) {
-                        currentFragment.popToChild(FirstHomeFragment.class, false);
-                    } else if (currentFragment instanceof ZhihuSecondFragment) {
+                    if (currentFragment instanceof ZhihuSecondFragment) {
+                        currentFragment.popToChild(SecondHomeFragment.class, false);
+                    } else if (currentFragment instanceof ZhihuFirstFragment) {
                         currentFragment.popToChild(ViewPagerFragment.class, false);
                     } else if (currentFragment instanceof ColleageFragment) {
                         currentFragment.popToChild(ColleageFragment.class, false);
