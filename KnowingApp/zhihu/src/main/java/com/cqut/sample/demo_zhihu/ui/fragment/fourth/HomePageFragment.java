@@ -19,11 +19,11 @@ public class HomePageFragment extends SupportFragment {
     String TextContent ="Colleage";
     private String mTitle;
 
-    public static ColleageFragment newInstance(String title) {
+    public static HomePageFragment newInstance(String title) {
 
         Bundle args = new Bundle();
         args.putString(ARG_TYPE, title);
-        ColleageFragment fragment = new ColleageFragment();
+        HomePageFragment fragment = new HomePageFragment();
         fragment.setArguments(args);
         return fragment;
     }

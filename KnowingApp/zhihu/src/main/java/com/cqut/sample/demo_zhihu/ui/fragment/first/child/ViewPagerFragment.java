@@ -18,7 +18,6 @@ public class ViewPagerFragment extends SupportFragment {
     private ViewPager mViewPager;
 
     public static ViewPagerFragment newInstance() {
-
         Bundle args = new Bundle();
         ViewPagerFragment fragment = new ViewPagerFragment();
         fragment.setArguments(args);
