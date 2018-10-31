@@ -31,14 +31,14 @@ public class ColleageFragment extends SupportFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mTitle = getArguments().getString(ARG_TYPE);
+//        mTitle = getArguments().getString("ddd");
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.zhihu_fragment_second_pager_other, container, false);
-        initView(view);
+        View view = inflater.inflate(R.layout.homecolleage, container, false);
+//        initView(view);
         return view;
     }
 
@@ -46,5 +46,6 @@ public class ColleageFragment extends SupportFragment {
         TextView tvTitle = (TextView) view.findViewById(R.id.tv_title);
         tvTitle.setText(mTitle);
     }
+
 
 }
