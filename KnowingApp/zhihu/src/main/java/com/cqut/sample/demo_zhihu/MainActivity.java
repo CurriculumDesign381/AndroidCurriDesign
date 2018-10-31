@@ -10,7 +10,7 @@ import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.base.BaseMainFragment;
 import com.cqut.sample.demo_zhihu.event.TabSelectedEvent;
-import com.cqut.sample.demo_zhihu.ui.fragment.fifth.NoticceFragment;
+import com.cqut.sample.demo_zhihu.ui.fragment.fifth.PersonalHomeFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.second.ZhihuSecondFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.second.child.SecondHomeFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.fourth.HomePageFragment;
@@ -43,7 +43,7 @@ public class MainActivity extends SupportActivity implements BaseMainFragment.On
             mFragments[FIRST] = ZhihuFirstFragment.newInstance();
             mFragments[SECOND] = ZhihuSecondFragment.newInstance();
             mFragments[THIRD] = ColleageFragment.newInstance("Colleage");
-            mFragments[FOURTH] = NoticceFragment.newInstance("Noticce");
+            mFragments[FOURTH] = PersonalHomeFragment.newInstance();
             mFragments[FIFTH] = HomePageFragment.newInstance("PHomePage");
 
             loadMultipleRootFragment(R.id.fl_container, FIRST,
