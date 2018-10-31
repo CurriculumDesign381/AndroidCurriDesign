@@ -16,18 +16,23 @@ import com.cqut.sample.demo_zhihu.ui.fragment.third.ColleageFragment;
 
 public class PersonalHomeFragment extends SupportFragment {
     private static final String ARG_TYPE = "arg_type";
-    public static ColleageFragment newInstance() {
+    public static PersonalHomeFragment newInstance() {
 
         Bundle args = new Bundle();
     /*    args.putString(ARG_TYPE, title);*/
-        ColleageFragment fragment = new ColleageFragment();
+        PersonalHomeFragment fragment = new PersonalHomeFragment();
         /*fragment.setArguments(args);*/
         return fragment;
+    }
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
     }
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.wo, container, false);
+        View view = inflater.inflate(R.layout.person_page, container, false);
         return view;
     }
 }

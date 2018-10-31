@@ -63,6 +63,9 @@ dependencies {
     // EventBus
     compile project(':eventbus_activity_scope')
     compile 'org.greenrobot:eventbus:3.0.0'
+
     //    apt 'org.greenrobot:eventbus-annotation-processor:3.0.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
 }
 

@@ -43,8 +43,8 @@ public class MainActivity extends SupportActivity implements BaseMainFragment.On
             mFragments[FIRST] = ZhihuFirstFragment.newInstance();
             mFragments[SECOND] = ZhihuSecondFragment.newInstance();
             mFragments[THIRD] = ColleageFragment.newInstance("Colleage");
-            mFragments[FOURTH] = PersonalHomeFragment.newInstance();
-            mFragments[FIFTH] = HomePageFragment.newInstance("PHomePage");
+            mFragments[FOURTH] = HomePageFragment.newInstance("dd");
+            mFragments[FIFTH] = PersonalHomeFragment.newInstance();
 
             loadMultipleRootFragment(R.id.fl_container, FIRST,
                     mFragments[FIRST],
