@@ -8,4 +8,7 @@
     <color name="tab_unselect">#c9c9c9</color>
     <color name="bg_btn">#dadada</color>
     <color name="xiahuaxian">#7c7477</color>
+    <color name="colorNoticeBackground">#e6e6e6</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colortextgray">#bfbfbf</color>
 </resources>

@@ -1,5 +1,6 @@
 package com.cqut.sample.demo_zhihu.ui.fragment.fourth;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -26,6 +27,39 @@ public class HomePageFragment extends SupportFragment {
         fragment.setArguments(args);
         return fragment;
     }
+    public void ItemClik(){
+//        View set = findViewById(R.id.notice_set);
+//        set.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                Intent intent = new Intent(Main_notice.this,setting.class);
+//
+//                startActivity(intent);
+//            }
+//        });
+//
+//        View privateletter = findViewById(R.id.LinearLayout_privateletter);
+//        privateletter.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                Intent intent = new Intent(Main_notice.this,privateletter.class);
+//
+//                startActivity(intent);
+//            }
+//        });
+//        View invite = findViewById(R.id.LinearLayout_invite);
+//        invite.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                Intent intent = new Intent(Main_notice.this,invite.class);
+//                startActivity(intent);
+//            }
+//        });
+//        View badge = findViewById(R.id.LinearLayout_badge);
+//        badge.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                Intent intent = new Intent(Main_notice.this,badge.class);
+//                startActivity(intent);
+//            }
+//        });
+    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,7 +70,7 @@ public class HomePageFragment extends SupportFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.zhihu_fragment_second_pager_other, container, false);
+        View view = inflater.inflate(R.layout.activity_notice, container, false);
         initView(view);
         return view;
     }
