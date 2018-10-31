@@ -14,9 +14,7 @@ import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
 
 
-/**
- * Created by YoKeyword on 16/6/3.
- */
+
 public class BottomBar extends LinearLayout {
     private static final int TRANSLATE_DURATION_MILLIS = 200;
 

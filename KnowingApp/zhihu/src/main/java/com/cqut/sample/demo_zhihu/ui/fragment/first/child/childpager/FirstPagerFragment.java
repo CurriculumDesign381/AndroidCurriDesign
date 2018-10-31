@@ -1,4 +1,4 @@
-package com.cqut.sample.demo_zhihu.ui.fragment.second.child.childpager;
+package com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -22,7 +22,7 @@ import com.cqut.sample.demo_zhihu.adapter.HomeAdapter;
 import com.cqut.sample.demo_zhihu.entity.Article;
 import com.cqut.sample.demo_zhihu.event.TabSelectedEvent;
 import com.cqut.sample.demo_zhihu.listener.OnItemClickListener;
-import com.cqut.sample.demo_zhihu.ui.fragment.second.child.DetailFragment;
+import com.cqut.sample.demo_zhihu.ui.fragment.first.child.DetailFragment;
 
 
 public class FirstPagerFragment extends SupportFragment implements SwipeRefreshLayout.OnRefreshListener {

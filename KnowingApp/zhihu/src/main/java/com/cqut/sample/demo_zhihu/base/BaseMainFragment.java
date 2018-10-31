@@ -3,7 +3,7 @@ package com.cqut.sample.demo_zhihu.base;
 import android.content.Context;
 
 import com.cqut.fragmentation.SupportFragment;
-import com.cqut.sample.demo_zhihu.ui.fragment.first.ZhihuFirstFragment;
+import com.cqut.sample.demo_zhihu.ui.fragment.second.ZhihuSecondFragment;
 
 /**
  * 懒加载
@@ -39,7 +39,7 @@ public abstract class BaseMainFragment extends SupportFragment {
         if (getChildFragmentManager().getBackStackEntryCount() > 1) {
             popChild();
         } else {
-            if (this instanceof ZhihuFirstFragment) {   // 如果是 第一个Fragment 则退出app
+            if (this instanceof ZhihuSecondFragment) {   // 如果是 第一个Fragment 则退出app
                 _mActivity.finish();
             } else {                                    // 如果不是,则回到第一个Fragment
                 _mBackToFirstListener.onBackToFirstFragment();

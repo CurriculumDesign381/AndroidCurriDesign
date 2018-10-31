@@ -12,9 +12,7 @@ import android.widget.TextView;
 import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.base.BaseBackFragment;
 
-/**
- * Created by YoKeyword on 16/2/7.
- */
+
 public class CycleFragment extends BaseBackFragment {
     private static final String ARG_NUMBER = "arg_number";
 

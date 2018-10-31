@@ -1,4 +1,4 @@
-package com.cqut.sample.demo_zhihu.ui.fragment.second.child;
+package com.cqut.sample.demo_zhihu.ui.fragment.first.child;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,9 +12,7 @@ import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.adapter.ZhihuPagerFragmentAdapter;
 
-/**
- * Created by YoKeyword on 16/6/5.
- */
+
 public class ViewPagerFragment extends SupportFragment {
     private TabLayout mTab;
     private ViewPager mViewPager;

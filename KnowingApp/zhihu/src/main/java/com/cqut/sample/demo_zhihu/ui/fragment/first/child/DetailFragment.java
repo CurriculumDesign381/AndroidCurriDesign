@@ -1,4 +1,4 @@
-package com.cqut.sample.demo_zhihu.ui.fragment.second.child;
+package com.cqut.sample.demo_zhihu.ui.fragment.first.child;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,9 +13,7 @@ import android.widget.Toast;
 import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.base.BaseBackFragment;
 
-/**
- * Created by YoKeyword on 16/2/3.
- */
+
 public class DetailFragment extends BaseBackFragment {
     public static final String TAG = DetailFragment.class.getSimpleName();
     private static final int REQ_MODIFY_FRAGMENT = 100;

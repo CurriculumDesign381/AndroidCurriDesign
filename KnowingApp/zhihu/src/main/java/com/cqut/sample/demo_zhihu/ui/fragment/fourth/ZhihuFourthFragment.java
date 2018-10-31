@@ -12,9 +12,7 @@ import com.cqut.sample.demo_zhihu.base.BaseMainFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.fourth.child.AvatarFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.fourth.child.MeFragment;
 
-/**
- * Created by YoKeyword on 16/6/3.
- */
+
 public class ZhihuFourthFragment extends BaseMainFragment {
     private Toolbar mToolbar;
     private View mView;

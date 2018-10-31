@@ -13,9 +13,7 @@ import android.widget.ImageView;
 
 import com.cqut.sample.R;
 
-/**
- * Created by YoKeyword on 16/6/3.
- */
+
 public class BottomBarTab extends FrameLayout {
     private ImageView mIcon;
     private Context mContext;
