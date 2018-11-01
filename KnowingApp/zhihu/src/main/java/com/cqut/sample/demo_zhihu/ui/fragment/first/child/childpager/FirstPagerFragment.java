@@ -22,7 +22,6 @@ import com.cqut.sample.demo_zhihu.adapter.HomeAdapter;
 import com.cqut.sample.demo_zhihu.entity.Article;
 import com.cqut.sample.demo_zhihu.event.TabSelectedEvent;
 import com.cqut.sample.demo_zhihu.listener.OnItemClickListener;
-import com.cqut.sample.demo_zhihu.ui.fragment.first.child.DetailFragment;
 
 
 public class FirstPagerFragment extends SupportFragment implements SwipeRefreshLayout.OnRefreshListener {
@@ -67,14 +66,14 @@ public class FirstPagerFragment extends SupportFragment implements SwipeRefreshL
         mRecy.setLayoutManager(manager);
         mRecy.setAdapter(mAdapter);
 
-        mAdapter.setOnItemClickListener(new OnItemClickListener() {
+       /* mAdapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(int position, View view, RecyclerView.ViewHolder vh) {
                 // 这里的DetailFragment在flow包里
                 // 这里是父Fragment启动,要注意 栈层级
                 ((SupportFragment) getParentFragment()).start(DetailFragment.newInstance(mAdapter.getItem(position).getTitle()));
             }
-        });
+        });*/
 
         // Init Datas
         List<Article> articleList = new ArrayList<>();
