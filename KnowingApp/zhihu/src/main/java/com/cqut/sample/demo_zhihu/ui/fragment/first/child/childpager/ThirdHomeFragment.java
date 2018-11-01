@@ -50,6 +50,16 @@ public class ThirdHomeFragment extends SupportFragment {
         Picasso.with(this.getContext())
                 .load("http://p.qpic.cn/videoyun/0/2449_ded7b566b37911e5942f0b208e48548d_2/640")
                 .into(jzVideoPlayerStandard1.thumbImageView);
+
+
+        JZVideoPlayerStandard jzVideoPlayerStandard2 = (JZVideoPlayerStandard) view.findViewById(R.id.videoplayer2);
+        jzVideoPlayerStandard2.setUp("http://121.40.64.47/resource/mp3/music_yangguang3.mp3"
+                , jzVideoPlayerStandard2.SCREEN_WINDOW_NORMAL, "");
+
+        //picass 图片加载框架
+        Picasso.with(this.getContext())
+                .load("http://p.qpic.cn/videoyun/0/2449_38e65894d9e211e5b0e0a3699ca1d490_1/640")
+                .into(jzVideoPlayerStandard2.thumbImageView);
         return view;
     }
     @Override

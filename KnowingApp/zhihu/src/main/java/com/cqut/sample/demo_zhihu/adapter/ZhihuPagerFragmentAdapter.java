@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager.FirstHomePageFragment;
-import com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager.OtherPagerFragment;
+
 import com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager.SecondHomePageFragment;
 import com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager.ThirdHomeFragment;
 
@@ -24,11 +24,9 @@ public class ZhihuPagerFragmentAdapter extends FragmentPagerAdapter {
             return FirstHomePageFragment.newInstance();
         }else  if(position ==1){
          return SecondHomePageFragment.newInstance();
-       }else if(position ==2){
-            return ThirdHomeFragment.newInstance();
-        }
+       }
         else {
-            return OtherPagerFragment.newInstance(mTitles[position]);
+           return ThirdHomeFragment.newInstance();
         }
     }
 

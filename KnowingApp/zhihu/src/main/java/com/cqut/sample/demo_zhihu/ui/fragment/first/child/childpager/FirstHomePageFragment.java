@@ -36,11 +36,11 @@ public class FirstHomePageFragment extends SupportFragment implements SwipeRefre
     private String[] mTitles;
     private String[] mContents;
 
-    public static FirstPagerFragment newInstance() {
+    public static FirstHomePageFragment newInstance() {
 
         Bundle args = new Bundle();
 
-        FirstPagerFragment fragment = new FirstPagerFragment();
+        FirstHomePageFragment fragment = new FirstHomePageFragment();
         fragment.setArguments(args);
         return fragment;
     }
