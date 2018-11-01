@@ -16,8 +16,6 @@ import com.cqut.sample.demo_zhihu.MainActivity;
 import com.cqut.sample.demo_zhihu.adapter.HomeAdapter;
 import com.cqut.sample.demo_zhihu.entity.Article;
 import com.cqut.sample.demo_zhihu.event.TabSelectedEvent;
-import com.cqut.sample.demo_zhihu.listener.OnItemClickListener;
-import com.cqut.sample.demo_zhihu.ui.fragment.first.child.DetailFragment;
 
 import org.greenrobot.eventbus.Subscribe;
 
@@ -71,14 +69,14 @@ public class FirstHomePageFragment extends SupportFragment implements SwipeRefre
         mRecy.setLayoutManager(manager);
         mRecy.setAdapter(mAdapter);
 
-        mAdapter.setOnItemClickListener(new OnItemClickListener() {
+     /*   mAdapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(int position, View view, RecyclerView.ViewHolder vh) {
                 // 这里的DetailFragment在flow包里
                 // 这里是父Fragment启动,要注意 栈层级
                 ((SupportFragment) getParentFragment()).start(DetailFragment.newInstance(mAdapter.getItem(position).getTitle()));
             }
-        });
+        });*/
 
         // Init Datas
         List<Article> articleList = new ArrayList<>();

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />-->
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:scrollbars="none">
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/videoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Show title after fullscreen" />
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/videoplayer1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Show title after fullscreen" />
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/videoplayer2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Show title after fullscreen" />
+ </ScrollView>
+<!--
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <n.jzvd.JZVideoPlayerStandard
+                android:id="@+id/videocontroller1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Show title after fullscreen" />
+
+            <n.jzvd.JZVideoPlayerStandard
+                android:id="@+id/videocontroller2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Play mp3" />
+
+            <n.jzvd.JZVideoPlayerStandard
+                android:id="@+id/videocontroller3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="2dp" />
+
+            <Button
+                android:id="@+id/to_fullscreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To fullscreen derictly" />
+
+            <Button
+                android:id="@+id/to_changecolor_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set skin" />
+
+            <Button
+                android:id="@+id/to_list_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List demo" />
+
+            <Button
+                android:id="@+id/to_list_viewpager_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List and Viewpager demo" />
+
+        </LinearLayout>
+    </ScrollView>
+-->
+
+</LinearLayout>

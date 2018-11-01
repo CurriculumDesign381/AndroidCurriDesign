@@ -42,7 +42,7 @@ public class ViewPagerFragment extends SupportFragment {
 
         mViewPager.setAdapter(new ZhihuPagerFragmentAdapter(getChildFragmentManager(),
                 getString(R.string.recommend), getString(R.string.hot), getString(R.string.favorite),
-                getString(R.string.more)));
+                getString(R.string.video)));
         mTab.setupWithViewPager(mViewPager);
     }
 }

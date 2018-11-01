@@ -71,7 +71,7 @@ public class HomePageFragment extends SupportFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_notice, container, false);
-        initView(view);
+      /*  initView(view);*/
         return view;
     }
 

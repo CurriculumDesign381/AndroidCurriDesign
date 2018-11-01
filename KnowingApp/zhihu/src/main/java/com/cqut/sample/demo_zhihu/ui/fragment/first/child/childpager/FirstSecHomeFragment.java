@@ -1,4 +1,4 @@
-package com.cqut.sample.demo_zhihu.ui.fragment.second.child;
+package com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -14,11 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import org.greenrobot.eventbus.Subscribe;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import com.cqut.eventbusactivityscope.EventBusActivityScope;
 import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
@@ -28,10 +23,19 @@ import com.cqut.sample.demo_zhihu.entity.Article;
 import com.cqut.sample.demo_zhihu.event.TabSelectedEvent;
 import com.cqut.sample.demo_zhihu.helper.DetailTransition;
 import com.cqut.sample.demo_zhihu.listener.OnItemClickListener;
+import com.cqut.sample.demo_zhihu.ui.fragment.second.child.SecondDetailFragment;
 
+import org.greenrobot.eventbus.Subscribe;
 
-public class SecondHomeFragment extends SupportFragment implements SwipeRefreshLayout.OnRefreshListener {
-    private Toolbar mToolbar;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by fei on 2018/11/1.
+ */
+
+public class FirstSecHomeFragment extends SupportFragment implements SwipeRefreshLayout.OnRefreshListener{
+
     private RecyclerView mRecy;
     private SwipeRefreshLayout mRefreshLayout;
     private FloatingActionButton mFab;
@@ -59,9 +63,9 @@ public class SecondHomeFragment extends SupportFragment implements SwipeRefreshL
     };
 
 
-    public static SecondHomeFragment newInstance() {
+    public static FirstSecHomeFragment newInstance() {
         Bundle args = new Bundle();
-        SecondHomeFragment fragment = new SecondHomeFragment();
+        FirstSecHomeFragment fragment = new FirstSecHomeFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -69,19 +73,19 @@ public class SecondHomeFragment extends SupportFragment implements SwipeRefreshL
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.zhihu_fragment_first_home, container, false);
+        View view = inflater.inflate(R.layout.secondsec_page, container, false);
         EventBusActivityScope.getDefault(_mActivity).register(this);
         initView(view);
         return view;
     }
 
     private void initView(View view) {
-        mToolbar = (Toolbar) view.findViewById(R.id.toolbar);
+
         mRecy = (RecyclerView) view.findViewById(R.id.recy);
         mRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.refresh_layout);
         mFab = (FloatingActionButton) view.findViewById(R.id.fab);
 
-        mToolbar.setTitle(R.string.home);
+
 
         mRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
         mRefreshLayout.setOnRefreshListener(this);
