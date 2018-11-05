@@ -1,5 +1,6 @@
 package com.cqut.sample.demo_zhihu.ui.fragment.fifth;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,11 +8,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
 import com.cqut.sample.demo_zhihu.adapter.FruitAdapter;
 import com.cqut.sample.demo_zhihu.entity.Fruit;
+import com.cqut.sample.demo_zhihu.loginActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +53,7 @@ public class PersonalHomeFragment extends SupportFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.person_page, container, false);
+        final View view = inflater.inflate(R.layout.person_page, container, false);
         initFruit();
 
         RecyclerView recyclerView = (RecyclerView)view.findViewById(R.id.recycler_view);
@@ -63,5 +66,19 @@ public class PersonalHomeFragment extends SupportFragment {
         FruitAdapter adapter = new FruitAdapter(fruitInfo);
         recyclerView.setAdapter(adapter);
         return view;
+    }
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        ImageView imageView = getActivity().findViewById(R.id.imageView16);
+        imageView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),loginActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
