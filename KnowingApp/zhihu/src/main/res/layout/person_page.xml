@@ -47,13 +47,17 @@
             </RelativeLayout>
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:weightSum="4">
+            android:weightSum="4"
+            android:id="@+id/part_first2">
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
+                <!--   android:visibility="gone"-->
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="45sp"
                     android:layout_height="45sp"
@@ -62,9 +66,71 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="33dp"
                     android:layout_marginStart="33dp"
-                    android:id="@+id/imageView16"
-                    android:src="@drawable/beckham"
+                    android:id="@+id/imageView16_2"
+
                     />
+
+
+                <TextView
+                    android:id="@+id/textView20_2"
+                    android:layout_width="50sp"
+                    android:layout_height="20sp"
+                    android:layout_alignTop="@+id/imageView16_2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/imageView16_2"
+                    android:layout_toRightOf="@+id/imageView16_2"
+                    android:text="未登录"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:id="@+id/textView21_2"
+                    android:layout_width="100sp"
+                    android:layout_height="20sp"
+                    android:layout_alignLeft="@+id/textView20_2"
+                    android:layout_alignStart="@+id/textView20_2"
+                    android:layout_below="@+id/textView20_2"
+                    android:text=" 知乎颜值: >"
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="80sp"
+                    android:layout_height="20sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=" 个人主页 >"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+                />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:weightSum="4"
+            android:visibility="gone"
+            android:id="@+id/part_first">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginStart="33dp"
+                    android:src="@drawable/beckham" />
 
 
                 <TextView
@@ -99,19 +165,105 @@
                     android:text=" 个人主页 >"
                     android:textColor="#fff"
                     android:textSize="13sp" />
-                    />
+                />
 
             </RelativeLayout>
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:id="@+id/part_second2"
+          >
 
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:text="0"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:text="关注"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:text="0"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:text="收藏夹"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:text="0"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:text="最近浏览"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
         <!--创作 关注 收藏夹 最近浏览-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="77dp"
             android:background="#fff"
             android:orientation="horizontal"
-            android:weightSum="4">
+            android:weightSum="4"
+            android:visibility="gone"
+            android:id="@+id/part_second">
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -214,13 +366,56 @@
             </RelativeLayout>
         </LinearLayout>
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:id="@+id/part_third2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/bookshelf_2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/bookshelf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="13dp"
+                    android:text="我的书架"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:orientation="vertical"
             android:weightSum="2"
             android:layout_marginTop="10dp"
-            android:background="#fff">
+            android:background="#fff"
+            android:id="@+id/part_third"
+            android:visibility="gone">
 
             <LinearLayout
                 android:layout_width="match_parent"
