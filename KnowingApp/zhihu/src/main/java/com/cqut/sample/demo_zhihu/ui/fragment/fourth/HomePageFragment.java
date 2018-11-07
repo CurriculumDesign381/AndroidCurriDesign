@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
-import com.cqut.sample.demo_zhihu.ui.fragment.third.ColleageFragment;
-
 
 
 public class HomePageFragment extends SupportFragment {
@@ -26,39 +24,6 @@ public class HomePageFragment extends SupportFragment {
         HomePageFragment fragment = new HomePageFragment();
         fragment.setArguments(args);
         return fragment;
-    }
-    public void ItemClik(){
-//        View set = findViewById(R.id.notice_set);
-//        set.setOnClickListener(new View.OnClickListener(){
-//            public void onClick(View v){
-//                Intent intent = new Intent(Main_notice.this,setting.class);
-//
-//                startActivity(intent);
-//            }
-//        });
-//
-//        View privateletter = findViewById(R.id.LinearLayout_privateletter);
-//        privateletter.setOnClickListener(new View.OnClickListener(){
-//            public void onClick(View v){
-//                Intent intent = new Intent(Main_notice.this,privateletter.class);
-//
-//                startActivity(intent);
-//            }
-//        });
-//        View invite = findViewById(R.id.LinearLayout_invite);
-//        invite.setOnClickListener(new View.OnClickListener(){
-//            public void onClick(View v){
-//                Intent intent = new Intent(Main_notice.this,invite.class);
-//                startActivity(intent);
-//            }
-//        });
-//        View badge = findViewById(R.id.LinearLayout_badge);
-//        badge.setOnClickListener(new View.OnClickListener(){
-//            public void onClick(View v){
-//                Intent intent = new Intent(Main_notice.this,badge.class);
-//                startActivity(intent);
-//            }
-//        });
     }
 
     @Override
@@ -79,5 +44,43 @@ public class HomePageFragment extends SupportFragment {
         TextView tvTitle = (TextView) view.findViewById(R.id.tv_title);
         tvTitle.setText(mTitle);
     }
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
-}
+        View setting = getActivity().findViewById(R.id.notice_set);
+        setting.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), com.cqut.sample.demo_zhihu.ui.fragment.fourth.setting.class);
+
+                startActivity(intent);
+            }
+        });
+
+        View privateletter = getActivity().findViewById(R.id.LinearLayout_privateletter);
+        privateletter.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), com.cqut.sample.demo_zhihu.ui.fragment.fourth.privateletter.class);
+
+                startActivity(intent);
+            }
+        });
+        View invite = getActivity().findViewById(R.id.LinearLayout_invite);
+        invite.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), com.cqut.sample.demo_zhihu.ui.fragment.fourth.invite.class);
+                startActivity(intent);
+            }
+        });
+        View badge = getActivity().findViewById(R.id.LinearLayout_badge);
+        badge.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), com.cqut.sample.demo_zhihu.ui.fragment.fourth.badge.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    }
+
+
