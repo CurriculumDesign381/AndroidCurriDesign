@@ -19,7 +19,6 @@ public class Main_notice extends AppCompatActivity {
         set.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(Main_notice.this,setting.class);
-
                 startActivity(intent);
             }
         });
