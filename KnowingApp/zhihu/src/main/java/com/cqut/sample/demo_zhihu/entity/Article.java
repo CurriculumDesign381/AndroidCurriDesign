@@ -8,15 +8,10 @@ public class Article implements Parcelable{
     private String title;
     private String content;
     private int imgRes;
-    private String url;
+    private String videoUrl;
+    private String ImageUrl;
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
 
-    public String getUrl() {
-        return url;
-    }
 
     public Article(String title, String content) {
         this.title = title;
@@ -27,6 +22,12 @@ public class Article implements Parcelable{
         this.title = title;
         this.imgRes = imgRes;
     }
+
+public  Article(String videoUrl,String ImageUrl,String title){
+        this.videoUrl = videoUrl;
+        this.ImageUrl = ImageUrl;
+        this.title = title;
+}
 
     protected Article(Parcel in) {
         title = in.readString();
@@ -46,6 +47,23 @@ public class Article implements Parcelable{
         }
     };
 
+
+    public void setImageUrl(String imageUrl) {
+        ImageUrl = imageUrl;
+    }
+
+    public void setVideoUrl(String videoUrl) {
+        this.videoUrl = videoUrl;
+    }
+
+    public String getImageUrl() {
+
+        return ImageUrl;
+    }
+
+    public String getVideoUrl() {
+        return videoUrl;
+    }
     public String getTitle() {
         return title;
     }

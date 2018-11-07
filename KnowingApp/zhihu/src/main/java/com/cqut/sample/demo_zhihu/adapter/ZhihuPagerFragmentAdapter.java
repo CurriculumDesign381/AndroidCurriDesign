@@ -5,7 +5,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager.FirstHomePageFragment;
-import com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager.OtherPagerFragment;
+
+import com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager.SecondHomePageFragment;
+import com.cqut.sample.demo_zhihu.ui.fragment.first.child.childpager.ThirdHomeFragment;
 
 //为fragment添加数据
 public class ZhihuPagerFragmentAdapter extends FragmentPagerAdapter {
@@ -20,8 +22,11 @@ public class ZhihuPagerFragmentAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
        if (position == 0) {
             return FirstHomePageFragment.newInstance();
-        } else {
-            return OtherPagerFragment.newInstance(mTitles[position]);
+        }else  if(position ==1){
+         return SecondHomePageFragment.newInstance();
+       }
+        else {
+           return ThirdHomeFragment.newInstance();
         }
     }
 

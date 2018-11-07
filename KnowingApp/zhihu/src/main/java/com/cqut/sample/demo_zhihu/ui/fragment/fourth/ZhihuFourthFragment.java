@@ -20,7 +20,6 @@ public class ZhihuFourthFragment extends BaseMainFragment {
     public static ZhihuFourthFragment newInstance() {
 
         Bundle args = new Bundle();
-
         ZhihuFourthFragment fragment = new ZhihuFourthFragment();
         fragment.setArguments(args);
         return fragment;

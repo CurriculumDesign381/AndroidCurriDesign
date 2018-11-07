@@ -7,11 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
-
 import com.cqut.fragmentation.SupportFragment;
 import com.cqut.sample.R;
-import com.cqut.sample.demo_zhihu.ui.fragment.first.child.DetailFragment;
+
 import com.cqut.sample.demo_zhihu.ui.fragment.third.ColleageFragment;
 
 
@@ -50,6 +48,7 @@ public class HomePageFragment extends SupportFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_notice, container, false);
+
         return view;
     }
 

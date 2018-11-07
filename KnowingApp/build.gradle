@@ -11,6 +11,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
 //        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+     classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0-rc1'
     }
 }
 
@@ -31,7 +32,7 @@ task clean(type: Delete) {
 ext {
     compileSdkVersion = 27
     buildToolsVersion = "27.0.2"
-    minSdkVersion = 14
+    minSdkVersion = 20
     targetSdkVersion = compileSdkVersion
 
     v4Version = "27.1.1"

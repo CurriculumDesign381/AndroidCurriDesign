@@ -10,9 +10,10 @@
     <string name="swipe">SwipeBack</string>
     <string name="go_swipe_back">SwipeBackActivity+Fragment</string>
 
-    <string name="recommend">Recommend</string>
-    <string name="hot">Hot</string>
-    <string name="favorite">Favorite</string>
+    <string name="recommend">关注</string>
+    <string name="hot">推荐</string>
+    <string name="favorite">热榜</string>
+    <string name="video">视频</string>
 
     <string name="password">Password</string>
     <string name="register">Register</string>
@@ -146,15 +147,22 @@
     <string name="new_tip_start">Customize the animation between the Fragments</string>
 
     <string-array name="array_title">
-        <item>Andorid O Developer Preview</item>
-        <item>Build for a Multi-Screen World</item>
-        <item>Build Beautiful Apps</item>
+        <item>身为律师碰到的最奇葩的离婚案件是什么？</item>
+        <item>为什么我说罗永浩的锤子手机注定会失败</item>
+        <item>何让自己变得自信</item>
     </string-array>
 
     <string-array name="array_content">
-        <item>An early look at the next version of Android for testing, development, and feedback. Get your apps ready for Android O!</item>
-        <item>Android runs on billions of handheld devices around the world, and it now supports these exciting, new form-factors.</item>
-        <item>Resources to get you started with designing and developing for Android.</item>
+        <item>我唯一办过的一个离婚案，男方起诉离婚，我是女方的代理人。到了开庭的那一天，9点开庭，
+            9点10分了还没见男方来，法官打电话给男方，结果男方说“这么多年，每次约会她都迟到，
+            今天离婚了，我不忍了，我也要迟到一次让他等！”然后法官告诉他在开庭时间
+            半小时内不到的，视为撤诉，那个男的才急了...原来他还躺在床上没起床......</item>
+        <item>营销在企业的位置高于产品，折射出企业功利心态强烈，总想挣快钱，
+            总想产品一上市就赚个盆满钵满；对产品和技术不重视抑或投入力度不足
+            ，直接导致“中国制造”长期无法与国际品牌形成“对称型”竞争，不得不走低价路线。</item>
+        <item>感到害羞或是紧张时，人总会放不开手脚，做一些阻挡性的动作，
+            这会让你的举止显得不够落落大方。舒展身体，就像你要用头顶到天花板一样。
+            肩膀向后下方微倾，后背稍成弧度，确保两脚均匀承受身体重量。</item>
     </string-array>
 
     <string-array name="array_menu">
@@ -174,4 +182,18 @@
         <item>Menu13</item>
         <item>Menu14</item>
     </string-array>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
 </resources>
