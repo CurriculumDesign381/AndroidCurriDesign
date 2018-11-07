@@ -33,7 +33,7 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="725dp"
             android:src="@drawable/badge_all" />
     </LinearLayout>

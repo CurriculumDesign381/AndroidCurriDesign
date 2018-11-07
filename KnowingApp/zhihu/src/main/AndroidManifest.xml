@@ -26,10 +26,16 @@
             </intent-filter>
         </activity>
 
+
         <activity android:name=".demo_zhihu.ui.fragment.fourth.ddddddddd"></activity>
         <activity android:name=".demo_zhihu.ui.fragment.fourth.setting"></activity>
 
         <activity android:name=".demo_zhihu.loginActivity"></activity>
+
+
+        <activity android:name=".demo_zhihu.ui.fragment.fourth.badge" />
+        <activity android:name=".demo_zhihu.ui.fragment.fourth.invite" />
+        <activity android:name=".demo_zhihu.ui.fragment.fourth.privateletter" />
 
     </application>
 
